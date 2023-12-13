@@ -7,8 +7,10 @@ Image_Name = ""
 for i in range(10):
     Image_Name = Image_Name + str(random.randint(1,100))
 Image_Name = "Image_"+Image_Name+".png"
+
 #Change depending on if you're not using my (Jeroen) laptop
 File_Pathing = "C:/Users/20202619/OneDrive - TU Eindhoven (1)/Documents/TUe/Vakken/test/"
+
 #Filepath where image is written
 file_path = File_Pathing + Image_Name
 
@@ -27,7 +29,9 @@ while(True):
     # quitting button you may use any
     # desired button of your choice
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        cv2.imwrite(file_path, grayFrame)
+        clahe = cv2.createCLAHE(clipLimit=5.0, tileGridSize=(8, 8))
+        cl2 = clahe.apply(grayFrame)
+        cv2.imwrite(file_path, cl2)
         break
 
 # After the loop release the cap object
