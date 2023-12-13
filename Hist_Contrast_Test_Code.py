@@ -38,7 +38,7 @@ while(True):
         break
 
 
-clahe = cv2.createCLAHE(clipLimit=5.0, tileGridSize=(8, 8))
+clahe = cv2.createCLAHE(clipLimit=10.0, tileGridSize=(8, 8))
 cl2 = clahe.apply(img)
 
 File_Path_Con_2 = "C:/Users/20202619/OneDrive - TU Eindhoven/Vakken/CBL Microscopy/Python_Code_Microscope_Redux/test_1_Con_3.png"
