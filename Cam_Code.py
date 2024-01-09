@@ -29,9 +29,7 @@ while(True):
     # quitting button you may use any
     # desired button of your choice
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        clahe = cv2.createCLAHE(clipLimit=5.0, tileGridSize=(8, 8))
-        cl2 = clahe.apply(grayFrame)
-        cv2.imwrite(file_path, cl2)
+        cv2.imwrite(file_path, grayFrame)
         break
 
 # After the loop release the cap object
