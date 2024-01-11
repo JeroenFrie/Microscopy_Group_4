@@ -23,7 +23,8 @@ file. This file contains all of the code necessary to scan a set grid of images 
 your microscope. 
 
 All of the other files contain the pieces of code that were necessary to create
-this master file. As such these files are a bit messier.
+this master file. As such these files are a bit messier and contain less
+documentation.
 
 In general if you want to run any of the files contained in this GitHub repository
 you will need to change the "file_pathing" statements in the code since these are
