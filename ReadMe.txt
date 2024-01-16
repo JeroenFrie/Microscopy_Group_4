@@ -8,7 +8,7 @@ This GitHub repository contains 8 python files.
 
 3. Edge_Detection.py
 
-4. Full_Cell_Detection_Code.py
+4. Full_Cell_Detection.py
 
 5. Hist_Contrast_Test_Code.py
 
